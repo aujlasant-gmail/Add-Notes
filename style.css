@@ -1,57 +1,72 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.container {
-  background-color: #738580;
-  min-height: 100vh;
-  padding: 0.5rem;
+body {
+  background-color: #f0f0f0;
 }
 
-.nav {
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 1rem;
 }
 
-h1 {
-  padding-bottom: 1rem;
-  color: #ebe8e0;
+.header h1 {
+  color: #333;
 }
 
-button {
-  font-size: 2rem;
+.header button {
+  font-size: 1.5rem;
   border: none;
   outline: none;
-  background-color: #d01110;
+  background-color: #e44d26;
   color: #fff;
   padding: 0.5rem;
-  border-radius: 0.5rem;
+  cursor: pointer;
+  /* border-radius: 0.5rem; */
 }
 
 .notes-container {
   max-height: 95vh;
+  overflow: hidden;
 }
 
 p {
   height: 12rem;
   max-width: 90%;
   width: 90%;
-  position: relative;
-  right: 0;
   margin: 1rem auto;
-  padding: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.6);
+  padding: 1rem;
+  background-color: #333;
   color: #fff;
   font-size: 1.25rem;
   border-radius: 0.25rem;
   outline: none;
+  border: none;
+  position: relative;
 }
 
 p i {
   position: absolute;
-  top: 11rem;
+  top: 12rem;
   left: 97%;
+}
+
+@media (max-width: 768px) {
+  .notes-container {
+    max-height: 80vh;
+  }
+
+  p {
+    width: 90%;
+    right: 5;
+  }
+
+  p i {
+    left: 85%;
+  }
 }
