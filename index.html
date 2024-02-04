@@ -11,21 +11,30 @@
       referrerpolicy="no-referrer"
     />
     <title>Notes-App</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="nav">
-      <div class="button">
-        <i class="fa-regular fa-pen-to-square"></i>
-        <button>Create Notes</button>
+    <div class="container">
+      <div class="nav">
+        <button>Add Notes <i class="fa-solid fa-plus"></i></button>
+        <h1><i class="fa-solid fa-pen-to-square"></i>Notes</h1>
       </div>
-      <div class="display">
-        <h1>Notes</h1>
-      </div>
-    </div>
-    <div class="main">
-      <div class="textarea">
-        <div class="box"></div>
-        <div class="delete"><i class="fa-solid fa-trash"></i></div>
+
+      <div class="notes-container">
+        <p contenteditable="true" class="box">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint ipsum,
+          corrupti voluptatum ab quae, odio voluptatem rerum quam explicabo
+          architecto consequuntur voluptas illo harum. Fugiat vitae consectetur
+          debitis architecto earum.
+          <i class="fa-solid fa-trash"></i>
+        </p>
+        <p contenteditable="true" class="box">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint ipsum,
+          corrupti voluptatum ab quae, odio voluptatem rerum quam explicabo
+          architecto consequuntur voluptas illo harum. Fugiat vitae consectetur
+          debitis architecto earum.
+          <i class="fa-solid fa-trash"></i>
+        </p>
       </div>
     </div>
   </body>

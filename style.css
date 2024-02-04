@@ -1,0 +1,57 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  background-color: #738580;
+  min-height: 100vh;
+  padding: 0.5rem;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h1 {
+  padding-bottom: 1rem;
+  color: #ebe8e0;
+}
+
+button {
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  background-color: #d01110;
+  color: #fff;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.notes-container {
+  max-height: 95vh;
+}
+
+p {
+  height: 12rem;
+  max-width: 90%;
+  width: 90%;
+  position: relative;
+  right: 0;
+  margin: 1rem auto;
+  padding: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  font-size: 1.25rem;
+  border-radius: 0.25rem;
+  outline: none;
+}
+
+p i {
+  position: absolute;
+  top: 11rem;
+  left: 97%;
+}
